@@ -1,0 +1,165 @@
+
+/* Cai dat chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f1f5f9;
+}
+
+/* Bo cuc tong the */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #1e293b;
+    padding: 10px 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #3b82f6;
+}
+
+/* Khu vuc content va sidebar */
+.main-container {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Noi dung chinh chiem 3 phan */
+.content {
+    flex: 3;
+    min-width: 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.content > h2 {
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+/* Cac bai viet */
+.article {
+    padding: 18px;
+    margin-bottom: 15px;
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    border-radius: 5px;
+}
+
+.article h3 {
+    margin-bottom: 8px;
+    color: #1e40af;
+}
+
+.article p {
+    overflow-wrap: anywhere;
+}
+
+/* Sidebar chiem 1 phan */
+.sidebar {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 5px;
+    color: #334155;
+}
+
+.sidebar-intro {
+    margin-bottom: 15px;
+}
+
+.sidebar-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.sidebar-item h3 {
+    margin-bottom: 5px;
+    color: #1d4ed8;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Responsive: dien thoai va man hinh nho */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .content,
+    .sidebar {
+        width: 100%;
+        flex: none;
+        padding: 20px;
+    }
+}

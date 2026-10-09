@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout - Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>MY WEBSITE</h1>
+            <p>Khám phá kiến thức và công nghệ mỗi ngày</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#home">Trang chủ</a>
+            <a href="#news">Tin tức</a>
+            <a href="#technology">Công nghệ</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <!-- Main Content va Sidebar -->
+        <div class="main-container" id="home">
+
+            <main class="content">
+                <h2>Nội dung chính</h2>
+
+                <article class="article" id="news">
+                    <h3>1. Tìm hiểu CSS Flexbox</h3>
+                    <p>
+                        CSS Flexbox giúp sắp xếp các phần tử trên trang web
+                        một cách linh hoạt, dễ căn chỉnh và phân chia không gian.
+                    </p>
+                </article>
+
+                <article class="article" id="technology">
+                    <h3>2. Thiết kế website Responsive</h3>
+                    <p>
+                        Responsive giúp giao diện tự điều chỉnh theo kích thước
+                        màn hình máy tính, máy tính bảng và điện thoại.
+                    </p>
+                </article>
+
+                <article class="article">
+                    <h3>3. Lợi ích của Flexbox</h3>
+                    <p>
+                        Flexbox hỗ trợ căn chỉnh, thay đổi hướng sắp xếp và
+                        phân phối không gian giữa các phần tử một cách thuận tiện.
+                    </p>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p class="sidebar-intro">Nội dung bổ sung</p>
+
+                <div class="sidebar-item">
+                    <h3>Tin nổi bật</h3>
+                    <p>Cập nhật kiến thức lập trình web.</p>
+                </div>
+
+                <div class="sidebar-item">
+                    <h3>Chủ đề</h3>
+                    <p>HTML, CSS, JavaScript và Responsive Design.</p>
+                </div>
+
+                <div class="sidebar-item">
+                    <h3>Thông báo</h3>
+                    <p>Thực hành thường xuyên để nâng cao kỹ năng.</p>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <p>&copy; 2026 My Website - Bài thực hành CSS Flexbox</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
